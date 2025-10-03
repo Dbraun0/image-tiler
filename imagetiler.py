@@ -1,5 +1,12 @@
 # Imports
 import numpy as np
+from skimage import io as skio
+from skimage import transform
+from reportlab.pdfgen import canvas
+from reportlab.lib import pagesizes
+from reportlab.lib.utils import ImageReader
+import io
+import math
 
 # Functions
 inch_to_cm = lambda x: x*2.54
